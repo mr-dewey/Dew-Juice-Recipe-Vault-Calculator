@@ -25,7 +25,7 @@ class ejuice_app_tk(Tkinter.Tk):
 		self.entrySearch.grid(column=0,row=0,columnspan=9,sticky='EW')
 		self.entrySearch.bind("<Button-1>", self.OnEntrySearchClick)
 		self.entrySearch.bind("<KeyRelease>", self.OnSearch)
-		self.entrySearchVariable.set(u"Search for a recipe.")
+		self.entrySearchVariable.set(u"Search for a recipe or flavor.")
 
 		# *** Recipe Data *** #
 
@@ -257,6 +257,7 @@ class ejuice_app_tk(Tkinter.Tk):
 			self.listbox.grid(row=1, column=0, rowspan=self.flavorRow, sticky=Tkinter.N+Tkinter.S+Tkinter.E+Tkinter.W)
 			self.yScroll.grid(row=1, column=1,rowspan=self.flavorRow+1, sticky=Tkinter.N+Tkinter.S)
 			self.xScroll.grid(row=self.flavorRow+1, column=0, stick=Tkinter.E+Tkinter.W)
+			self.calculateBatch(None)
 
 	def addFlavor(self, name, strength):
 		self.flavorRow += 1
@@ -341,19 +342,27 @@ class ejuice_app_tk(Tkinter.Tk):
 			print 'Delete Recipe - Canceled'
 
 	def OnSearch(self, event):
+		# Inefficient - needs some work
 		term = self.entrySearchVariable.get().lower()
 		#print 'Term:',term
 		self.listbox.delete(0, Tkinter.END)
 		temp_list = []
 		for recipe in self.recipeVault:
-			if term in recipe.name.lower():
+			if term in recipe.name.lower() or len([i for i, flavor in enumerate(recipe.flavors) if term.lower() in flavor['Name'].lower()]):
 				temp_list.append(recipe.name)
 		temp_list.sort()
 		for item in temp_list:
 			self.listbox.insert(Tkinter.END, item)
+		if term == "":
+			self.entrySearchVariable.set(u"Search for a recipe or flavor.")
+			self.entrySearch.focus_set()
+			self.entrySearch.select_range(0, Tkinter.END)
+			return 'break'
+
 
 	def OnEntrySearchClick(self, event):
-		print 'Search Clicked'
+		self.update_list()
+		self.entrySearchVariable.set(u"Search for a recipe or flavor.")
 		self.entrySearch.focus_set()
 		self.entrySearch.select_range(0, Tkinter.END)
 		return 'break'
