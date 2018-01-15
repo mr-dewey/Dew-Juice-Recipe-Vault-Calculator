@@ -1,0 +1,168 @@
+[
+    {
+        "Description": "Tastes like a somoa cookie dipped in coffie :)", 
+        "Flavors": [
+            {
+                "Name": "FA Cookie", 
+                "Strength": "2"
+            }, 
+            {
+                "Name": "FA Vienna Cream", 
+                "Strength": "1"
+            }, 
+            {
+                "Name": "FA Caramel", 
+                "Strength": "1"
+            }, 
+            {
+                "Name": "FA Walnut", 
+                "Strength": "1"
+            }, 
+            {
+                "Name": "FA Coconut", 
+                "Strength": "1"
+            }, 
+            {
+                "Name": "FA Chocolate", 
+                "Strength": "1"
+            }, 
+            {
+                "Name": "FA Cocoa", 
+                "Strength": "1.5"
+            }, 
+            {
+                "Name": "FA Butterscotch", 
+                "Strength": "0.5"
+            }
+        ], 
+        "NIC": "0", 
+        "Name": "Cocoa Cookie", 
+        "PG": "30", 
+        "VG": "70"
+    }, 
+    {
+        "Description": "Name says it all", 
+        "Flavors": [
+            {
+                "Name": "FE Mango", 
+                "Strength": "6"
+            }, 
+            {
+                "Name": "FE KiwiStrawberry", 
+                "Strength": "6"
+            }
+        ], 
+        "NIC": "0", 
+        "Name": "Kiwi Strawberry Mango", 
+        "PG": "30", 
+        "VG": "70"
+    }, 
+    {
+        "Description": "Mountain Dew Code Red - Aww yeah", 
+        "Flavors": [
+            {
+                "Name": "Max Dew", 
+                "Strength": "5"
+            }, 
+            {
+                "Name": "FE kiwiStrawberry", 
+                "Strength": "3"
+            }, 
+            {
+                "Name": "Lemon", 
+                "Strength": "2"
+            }, 
+            {
+                "Name": "Lime", 
+                "Strength": "2"
+            }, 
+            {
+                "Name": "Sweetner", 
+                "Strength": "1"
+            }
+        ], 
+        "NIC": "0", 
+        "Name": "Code Red", 
+        "PG": "30", 
+        "VG": "70"
+    }, 
+    {
+        "Description": "Like a jollyrancher explosion in your mouth!", 
+        "Flavors": [
+            {
+                "Name": "Fuiji", 
+                "Strength": "6"
+            }, 
+            {
+                "Name": "Lemon", 
+                "Strength": "3"
+            }, 
+            {
+                "Name": "Lime", 
+                "Strength": "3"
+            }, 
+            {
+                "Name": "Sweetner", 
+                "Strength": "1"
+            }
+        ], 
+        "NIC": "0", 
+        "Name": "Fuiji Blast", 
+        "PG": "30", 
+        "VG": "70"
+    }, 
+    {
+        "Description": "Mountain Dew Livewire!!!", 
+        "Flavors": [
+            {
+                "Name": "Max Dew", 
+                "Strength": "5"
+            }, 
+            {
+                "Name": "Blood Orange", 
+                "Strength": "3"
+            }, 
+            {
+                "Name": "Lime", 
+                "Strength": "2"
+            }, 
+            {
+                "Name": "Lemon", 
+                "Strength": "2"
+            }, 
+            {
+                "Name": "Sweetner", 
+                "Strength": "1"
+            }
+        ], 
+        "NIC": "0", 
+        "Name": "LiveWire", 
+        "PG": "30", 
+        "VG": "70"
+    }, 
+    {
+        "Description": "Still in testing.", 
+        "Flavors": [
+            {
+                "Name": "Marshmallow", 
+                "Strength": "3"
+            }, 
+            {
+                "Name": "Cookie", 
+                "Strength": "3"
+            }, 
+            {
+                "Name": "Chocolate", 
+                "Strength": "3"
+            }, 
+            {
+                "Name": "Sweetner", 
+                "Strength": "1"
+            }
+        ], 
+        "NIC": "0", 
+        "Name": "Gabbie's Smores", 
+        "PG": "30", 
+        "VG": "70"
+    }
+]
