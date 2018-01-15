@@ -1,4 +1,4 @@
-# Dew-Juice-Recipe-Vault-Calculator
+# Dew-Juice Recipe Vault & Calculator
 A simple, inefficient, but functional electronic cigarette e-juice recipe vault and calculator.
 
 Features:
